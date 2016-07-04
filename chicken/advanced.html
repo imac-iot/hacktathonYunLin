@@ -27,7 +27,8 @@
             border: 1px solid black;
         }
     </style>
-	<script src="http://192.168.8.143:8124/socket.io/socket.io.js"></script>
+<!--  <script src="http://192.168.8.143:8124/socket.io/socket.io.js"></script>-->
+  <script src="http://10.21.20.131:8124/socket.io/socket.io.js"></script>
 	<script>
 		var socket = io.connect('http://localhost:8124');
 		socket.on('connect', function() {
@@ -89,7 +90,8 @@
 				var g = hex[3]+hex[4];
 				var b = hex[5]+hex[6];
 				console.log(r,g,b);
-				httpGet("http://192.168.8.143:8888/?R="+ r +"&G="+ g +"&B="+b);
+//				httpGet("http://192.168.8.143:8888/?R="+ r +"&G="+ g +"&B="+b);
+        httpGet("http://10.21.20.131:8888/?R="+ r +"&G="+ g +"&B="+b);
             });
 			/*
 			function mouseMove(e)
